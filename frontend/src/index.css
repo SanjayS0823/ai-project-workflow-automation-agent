@@ -1,0 +1,61 @@
+:root {
+  /* Color */
+  --text: #1f2328;
+  --text-muted: #59636e;
+  --bg: #ffffff;
+  --surface: #f6f8fa;
+  --border: #d1d9e0;
+  --border-light: #eaeef2;
+  --hover-bg: #f3f5f7;
+  --accent: #0969da;
+  --accent-hover: #0858b5;
+  --accent-soft: #e6f0fb;
+  --accent-ring: rgba(9, 105, 218, 0.18);
+  --accent-border: #7fb3ea;
+  --success: #1a7f37;
+  --success-bg: #dafbe1;
+  --success-border: #a6d9b4;
+  --danger: #cf222e;
+  --danger-bg: #ffebe9;
+  --danger-border: #ffb3ad;
+  --notice-bg: #f0f7ff;
+  --notice-border: #b6d9ff;
+
+  /* Elevation */
+  --shadow-sm: 0 1px 2px rgba(31, 35, 40, 0.06);
+  --shadow-md: 0 4px 12px rgba(31, 35, 40, 0.1);
+
+  /* Typography */
+  font-family:
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    Roboto,
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+::selection {
+  background: var(--accent-ring);
+}
